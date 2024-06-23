@@ -22,4 +22,4 @@ services:
       - ./app:/app
     links:
       - php
-    command: "composer update"
+    command: "composer install --optimize-autoloader --no-dev"
