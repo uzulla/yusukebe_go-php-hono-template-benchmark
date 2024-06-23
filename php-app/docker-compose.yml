@@ -6,6 +6,7 @@ services:
       - ./html:/usr/share/nginx/html
       - ./php_config/php.ini:/usr/local/etc/php/conf.d/php.ini
       - ./php_config/docker-fpm.ini:/usr/local/etc/php/conf.d/docker-fpm.ini
+      - ./php-fpm.d:/usr/local/etc/php-fpm.d
       - ./app:/app
 
   nginx:
