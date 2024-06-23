@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 5.3.1, created on 2024-06-23 14:37:49
+/* Smarty version 5.3.1, created on 2024-06-23 15:41:37
   from 'file:app.tpl' */
 
 /* @var \Smarty\Template $_smarty_tpl */
 if ($_smarty_tpl->getCached()->isFresh($_smarty_tpl, array (
   'version' => '5.3.1',
-  'unifunc' => 'content_6678333d0dc6f6_76466178',
+  'unifunc' => 'content_66784231b52c65_60154568',
   'has_nocache_code' => true,
   'file_dependency' => 
   array (
@@ -18,7 +18,7 @@ if ($_smarty_tpl->getCached()->isFresh($_smarty_tpl, array (
   ),
   'cache_lifetime' => 3600,
 ))) {
-function content_6678333d0dc6f6_76466178 (\Smarty\Template $_smarty_tpl) {
+function content_66784231b52c65_60154568 (\Smarty\Template $_smarty_tpl) {
 $_smarty_current_dir = '/usr/share/nginx/html';
 $_from = $_smarty_tpl->getSmarty()->getRuntime('Foreach')->init($_smarty_tpl, $_smarty_tpl->getValue('data'), 'foo');
 $foreach0DoElse = true;

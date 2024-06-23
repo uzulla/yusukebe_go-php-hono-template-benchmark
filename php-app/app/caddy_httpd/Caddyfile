@@ -1,0 +1,5 @@
+:80 {
+	root * /usr/share/nginx/html
+	php_fastcgi unix//tmp/php-fpm.sock
+	file_server
+}

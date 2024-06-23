@@ -8,17 +8,18 @@ services:
       - ./php_config/docker-fpm.ini:/usr/local/etc/php/conf.d/docker-fpm.ini
       - ./php-fpm.d:/usr/local/etc/php-fpm.d
       - ./app:/app
-
-  nginx:
-    image: nginx:latest
-    volumes:
-      - ./nginx_conf/conf.d/default.conf:/etc/nginx/conf.d/default.conf
-      - ./nginx_conf/nginx.conf:/etc/nginx/nginx.conf
-      - ./nginx_conf/fastcgi_params:/etc/nginx/fastcgi_params
-      - ./html:/usr/share/nginx/html
-    restart: always
     ports: ["8081:80"]
-    depends_on: ["php"]
+
+  # nginx:
+  #   image: nginx:latest
+  #   volumes:
+  #     - ./nginx_conf/conf.d/default.conf:/etc/nginx/conf.d/default.conf
+  #     - ./nginx_conf/nginx.conf:/etc/nginx/nginx.conf
+  #     - ./nginx_conf/fastcgi_params:/etc/nginx/fastcgi_params
+  #     - ./html:/usr/share/nginx/html
+  #   restart: always
+  #   ports: ["8081:80"]
+  #   depends_on: ["php"]
 
   composer:
     image: composer
