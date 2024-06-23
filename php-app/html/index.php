@@ -1,6 +1,5 @@
 <html><body><ul>
 <?php
-require_once('/app/vendor/smarty/smarty/libs/Smarty.class.php');
 $smarty = new Smarty\Smarty();
 $smarty->setCompileDir('/tmp');
 
