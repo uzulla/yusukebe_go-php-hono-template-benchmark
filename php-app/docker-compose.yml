@@ -5,7 +5,7 @@ services:
     volumes:
       - ./html:/usr/share/nginx/html
       - ./php_config/php.ini:/usr/local/etc/php/conf.d/php.ini
-      - ./php_config/docoker-fpm.ini:/usr/local/etc/php/conf.d/docoker-fpm.ini
+      - ./php_config/docker-fpm.ini:/usr/local/etc/php/conf.d/docker-fpm.ini
       - ./app:/app
 
   nginx:
